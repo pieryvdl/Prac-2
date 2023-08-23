@@ -1,6 +1,6 @@
-#include "..\Task 1\individual.h"
+#include "individual.h"
 
-individual::individual(string uniqueId, string CostCenter, int CostToCompany) {
+individual::individual(std::string uniqueId, std::string CostCenter, int CostToCompany) {
 	// TODO - implement individual::individual
 	throw "Not yet implemented";
 }
