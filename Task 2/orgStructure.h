@@ -1,13 +1,17 @@
 #ifndef ORGSTRUCTURE_H
 #define ORGSTRUCTURE_H
 
-class orgStructure : orgComponent {
+using namespace std;
+
+#include "orgComponent.h"
+
+class orgStructure : public orgComponent {
 
 
 public:
 	int getTotalExpenditure();
 
-	int getExpenditureByCostCenter(string CostCenter);
+	int getExpenditureByCostCenter(std::string CostCenter);
 
 	void add(orgComponent* component);
 };
