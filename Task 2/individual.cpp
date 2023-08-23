@@ -5,7 +5,7 @@ individual::individual(std::string uniqueId, std::string CostCenter, int CostToC
 	throw "Not yet implemented";
 }
 
-string individual::getUniqueId() {
+std::string individual::getUniqueId() {
 	// TODO - implement individual::getUniqueId
 	throw "Not yet implemented";
 }
@@ -15,12 +15,12 @@ void individual::setUniqueId(string uniqueId) {
 	throw "Not yet implemented";
 }
 
-string individual::getCostCenter() {
+std::string individual::getCostCenter() {
 	// TODO - implement individual::getCostCenter
 	throw "Not yet implemented";
 }
 
-void individual::setCostCenter(string CostCenter) {
+void individual::setCostCenter(std::string CostCenter) {
 	// TODO - implement individual::setCostCenter
 	throw "Not yet implemented";
 }
