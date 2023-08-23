@@ -1,23 +1,26 @@
 #ifndef INDIVIDUAL_H
 #define INDIVIDUAL_H
 
-class individual : orgComponent {
+#include <string>
+#include "orgComponent.h"
+
+class individual : public orgComponent {
 
 private:
 	int uniqueId;
-	string CostCenter;
+	std::string CostCenter;
 	int CostToCompany;
 
 public:
-	individual(string uniqueId, string CostCenter, int CostToCompany);
+	individual(std::string uniqueId, std::string CostCenter, int CostToCompany);
 
-	string getUniqueId();
+	std::string getUniqueId();
 
-	void setUniqueId(string uniqueId);
+	void setUniqueId(std::string uniqueId);
 
-	string getCostCenter();
+	std::string getCostCenter();
 
-	void setCostCenter(string CostCenter);
+	void setCostCenter(std::string CostCenter);
 
 	int getCostToCompany();
 

@@ -1,4 +1,5 @@
 #include "individual.h"
+#include <string>
 
 individual::individual(std::string uniqueId, std::string CostCenter, int CostToCompany) {
 	// TODO - implement individual::individual
@@ -10,7 +11,7 @@ std::string individual::getUniqueId() {
 	throw "Not yet implemented";
 }
 
-void individual::setUniqueId(string uniqueId) {
+void individual::setUniqueId(std::string uniqueId) {
 	// TODO - implement individual::setUniqueId
 	throw "Not yet implemented";
 }

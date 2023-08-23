@@ -1,8 +1,7 @@
 #ifndef ORGSTRUCTURE_H
 #define ORGSTRUCTURE_H
 
-using namespace std;
-
+#include <string>
 #include "orgComponent.h"
 
 class orgStructure : public orgComponent {
