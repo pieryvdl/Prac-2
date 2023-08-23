@@ -1,37 +1,44 @@
 #include "individual.h"
 #include <string>
 
-individual::individual(std::string uniqueId, std::string CostCenter, int CostToCompany) {
-	// TODO - implement individual::individual
-	throw "Not yet implemented";
+individual::individual(int uniqueId, std::string CostCenter, int CostToCompany) {
+	this->uniqueId = uniqueId;
+	this->CostCenter = CostCenter;
+	this->CostToCompany = CostToCompany;
 }
 
-std::string individual::getUniqueId() {
-	// TODO - implement individual::getUniqueId
-	throw "Not yet implemented";
+int individual::getUniqueId() {
+	return uniqueId; //return the id
 }
 
-void individual::setUniqueId(std::string uniqueId) {
-	// TODO - implement individual::setUniqueId
-	throw "Not yet implemented";
+void individual::setUniqueId(int uniqueId) {
+	this->uniqueId = uniqueId;
 }
 
 std::string individual::getCostCenter() {
-	// TODO - implement individual::getCostCenter
-	throw "Not yet implemented";
+	return CostCenter;
 }
 
 void individual::setCostCenter(std::string CostCenter) {
-	// TODO - implement individual::setCostCenter
-	throw "Not yet implemented";
+	this->CostCenter = CostCenter;
 }
 
 int individual::getCostToCompany() {
-	// TODO - implement individual::getCostToCompany
-	throw "Not yet implemented";
+	return CostToCompany;
 }
 
 void individual::setCostToCompany(int CostToCompany) {
-	// TODO - implement individual::setCostToCompany
-	throw "Not yet implemented";
+	this->CostToCompany = CostToCompany;
+}
+
+int individual::getTotalExpenditure(){
+	return CostToCompany;
+}
+
+int individual::getExpenditureByCostCenter(const std::string& CostCenter){
+	if (this->CostCenter == CostCenter){ ///we check if the costcenter matches
+		return CostToCompany; //if it does return cost to company
+	} else {
+		return 0;
+	}
 }

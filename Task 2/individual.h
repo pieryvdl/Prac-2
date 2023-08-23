@@ -12,11 +12,11 @@ private:
 	int CostToCompany;
 
 public:
-	individual(std::string uniqueId, std::string CostCenter, int CostToCompany);
+	individual(int uniqueId, std::string CostCenter, int CostToCompany);
 
-	std::string getUniqueId();
+	int getUniqueId();
 
-	void setUniqueId(std::string uniqueId);
+	void setUniqueId(int uniqueId);
 
 	std::string getCostCenter();
 
@@ -25,6 +25,10 @@ public:
 	int getCostToCompany();
 
 	void setCostToCompany(int CostToCompany);
+
+	int getTotalExpenditure();
+
+	int getExpenditureByCostCenter(const std::string& CostCenter);
 };
 
 #endif

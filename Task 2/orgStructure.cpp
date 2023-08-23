@@ -1,16 +1,23 @@
 #include "orgStructure.h"
 
 int orgStructure::getTotalExpenditure() {
-	// TODO - implement orgStructure::getTotalExpenditure
-	throw "Not yet implemented";
+	int totalExpenses = 0; //initialise a cost
+	for (std::vector<orgComponent*>::const_iterator i = children.begin(); i != children.end(); ++i)
+	{
+		totalExpenses = totalExpenses + (*i)->getTotalExpenditure();
+	}
+	return totalExpenses;
 }
 
 int orgStructure::getExpenditureByCostCenter(std::string CostCenter) {
-	// TODO - implement orgStructure::getExpenditureByCostCenter
-	throw "Not yet implemented";
+	int totalExpenses = 0; //initialise a cost
+	for (std::vector<orgComponent*>::const_iterator i = children.begin(); i != children.end(); ++i)
+	{
+		totalExpenses = totalExpenses + (*i)->getExpenditureByCostCenter(CostCenter);
+	}
+	return totalExpenses;
 }
 
 void orgStructure::add(orgComponent* component) {
-	// TODO - implement orgStructure::add
-	throw "Not yet implemented";
+	this->children.push_back(component);
 }
